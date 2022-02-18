@@ -7,7 +7,10 @@
     <h1 class="font-bold text-4xl">Conversion histories</h1>
   </div>
 
-  <div id="conversion_histories" class="min-w-full">
+  <%= turbo_stream_from "conversion_histories" %>
+  <div class="min-w-full">
+    <%= turbo_frame_tag "conversion_histories" do %>
     <%= render @conversion_histories %>
+    <% end %>
   </div>
 </div>
