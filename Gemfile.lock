@@ -71,6 +71,9 @@ GEM
     bootsnap (1.10.3)
       msgpack (~> 1.2)
     builder (3.2.4)
+    cable_ready (5.0.0.pre8)
+      rails (>= 5.2)
+      thread-local (>= 1.1.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     debug (1.4.0)
@@ -78,6 +81,8 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -196,10 +201,17 @@ GEM
     sqlite3 (1.4.2)
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
+    stimulus_reflex (3.5.0.pre8)
+      cable_ready (= 5.0.0.pre8)
+      nokogiri
+      rack
+      rails (>= 5.2)
+      redis
     strscan (3.0.1)
     tailwindcss-rails (2.0.5-x86_64-darwin)
       railties (>= 6.0.0)
     thor (1.2.1)
+    thread-local (1.1.0)
     timeout (0.2.0)
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
@@ -223,7 +235,9 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cable_ready (~> 5.0.0.pre8)
   debug
+  faker (~> 2.19)
   importmap-rails
   jbuilder
   open_exchange_rates (~> 0.6.0)
@@ -238,6 +252,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  stimulus_reflex (~> 3.5.0.pre8)
   tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data

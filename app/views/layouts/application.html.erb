@@ -14,7 +14,7 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5">
-      <div class="mx-auto md:w-2/3 w-full container">
+      <div class="mx-auto md:w-2/3 w-full container" id="conversion_history_form">
         <%= render partial: 'conversion_histories/form', locals: {conversion_history: ConversionHistory.new} %>
       </div>
       <div class="container w-full">

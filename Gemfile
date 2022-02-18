@@ -73,3 +73,9 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 
 gem "open_exchange_rates", "~> 0.6.0"
+
+gem "stimulus_reflex", "~> 3.5.0.pre8"
+
+gem "cable_ready", "~> 5.0.0.pre8"
+
+gem "faker", "~> 2.19"
